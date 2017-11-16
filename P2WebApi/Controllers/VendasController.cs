@@ -38,9 +38,9 @@ namespace P2WebApi.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Metodo que busca todas as Vendas
         /// </summary>
-        /// <returns></returns>
+        /// <returns>DataTable</returns>
         public DataTable BuscarTodosVendas()
         {
             SqlConnection conn = null;
@@ -72,11 +72,11 @@ namespace P2WebApi.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Metodo que Exclui uma venda
         /// </summary>
-        /// <param name="vendas"></param>
-        /// <returns></returns>
-        public bool ExcluirVendas(Vendas vendas)
+        /// <param name="vendas">Vendas</param>
+        /// <returns>Boolean</returns>
+        public Boolean ExcluirVendas(Vendas vendas)
         {
             SqlConnection conn = null;
             try
@@ -103,11 +103,11 @@ namespace P2WebApi.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Metodo que insere uma venda
         /// </summary>
-        /// <param name="vendas"></param>
-        /// <returns></returns>
-        public bool InsertVendas(Vendas vendas)
+        /// <param name="vendas">Vendas</param>
+        /// <returns>Boolean</returns>
+        public Boolean InsertVendas(Vendas vendas)
         {
             SqlConnection conn = null;
             try
@@ -135,11 +135,11 @@ namespace P2WebApi.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Metodo que atualiza dados da venda
         /// </summary>
-        /// <param name="vendas"></param>
-        /// <returns></returns>
-        public bool AtualizaVendas(Vendas vendas)
+        /// <param name="vendas">Vendas</param>
+        /// <returns>Boolean</returns>
+        public Boolean AtualizaVendas(Vendas vendas)
         {
             SqlConnection conn = null;
             try

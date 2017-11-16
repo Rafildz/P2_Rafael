@@ -37,7 +37,7 @@ namespace P2WebApi.Controllers
         }
 
         /// <summary>
-        /// Metodo de validar senha
+        /// Metodo de validar a senha
         /// </summary>
         /// <param name="id">int</param>
         /// <param name="senha">String</param>

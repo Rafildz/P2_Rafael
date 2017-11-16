@@ -38,10 +38,10 @@ namespace P2WebApi.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Metodos que busca todos os Produtos
         /// </summary>
-        /// <returns></returns>
-        public object BuscarTodosProdutos()
+        /// <returns>DataTable</returns>
+        public DataTable BuscarTodosProdutos()
         {
             SqlConnection conn = null;
             try
@@ -107,11 +107,11 @@ namespace P2WebApi.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Metodo que insere produtos
         /// </summary>
-        /// <param name="produtos"></param>
-        /// <returns></returns>
-        public bool InsertProdutos(Produtos produtos)
+        /// <param name="produtos">Produtos</param>
+        /// <returns>Boolean</returns>
+        public Boolean InsertProdutos(Produtos produtos)
         {
             SqlConnection conn = null;
             try
@@ -142,11 +142,11 @@ namespace P2WebApi.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Metodo que exclui produtos
         /// </summary>
-        /// <param name="produtos"></param>
-        /// <returns></returns>
-        public bool ExcluirProdutos(Produtos produtos)
+        /// <param name="produtos">Produtos</param>
+        /// <returns>Boolean</returns>
+        public Boolean ExcluirProdutos(Produtos produtos)
         {
             SqlConnection conn = null;
             try
@@ -188,11 +188,11 @@ namespace P2WebApi.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Metodo que atualiza os dados dos produtos
         /// </summary>
-        /// <param name="produtos"></param>
-        /// <returns></returns>
-        public bool AtualizaProdutos(Produtos produtos)
+        /// <param name="produtos">Produtos</param>
+        /// <returns>Boolean</returns>
+        public Boolean AtualizaProdutos(Produtos produtos)
         {
             SqlConnection conn = null;
             try

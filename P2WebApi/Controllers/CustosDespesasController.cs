@@ -25,9 +25,9 @@ namespace P2WebApi.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Metodo que busca todos os custos e despesas
         /// </summary>
-        /// <returns></returns>
+        /// <returns>DataTable</returns>
         public DataTable BuscarTodosCustosDespesas()
         {
             SqlConnection conn = null;
@@ -59,10 +59,10 @@ namespace P2WebApi.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Metodo que insere custos e despesas
         /// </summary>
-        /// <param name="cd"></param>
-        /// <returns></returns>
+        /// <param name="cd">CustosDespesas</param>
+        /// <returns>Boolean</returns>
         public Boolean InsertCustosDespesas(CustosDespesas cd)
         {
             SqlConnection conn = null;
@@ -91,11 +91,11 @@ namespace P2WebApi.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Metodo que atualiza os dados
         /// </summary>
-        /// <param name="custDesp"></param>
-        /// <returns></returns>
-        public bool AtualizaCustosDespesas(CustosDespesas custDesp)
+        /// <param name="cd">CustosDespesas</param>
+        /// <returns>Boolean</returns>
+        public Boolean AtualizaCustosDespesas(CustosDespesas cd)
         {
             SqlConnection conn = null;
             try
@@ -124,11 +124,11 @@ namespace P2WebApi.Controllers
         }
 
         /// <summary>
-        /// 
+        /// Metodo que exclui um custos e despesas
         /// </summary>
-        /// <param name="cd"></param>
-        /// <returns></returns>
-        public bool ExcluirCustosDespesas(CustosDespesas cd)
+        /// <param name="cd">CustosDespesas</param>
+        /// <returns>Boolean</returns>
+        public Boolean ExcluirCustosDespesas(CustosDespesas cd)
         {
 
             SqlConnection conn = null;
